@@ -14,7 +14,7 @@ print("Big equation: \t", big_equation)
 
 #--------------------------------------------------------------------------------
 # CHALLENGES
-print("\nChallenges: ")
+print("\n\nChallenges: ")
 
 # 1.
 area_of_rect = 8 * 5
