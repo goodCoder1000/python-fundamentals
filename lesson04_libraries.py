@@ -31,5 +31,25 @@ seed = math.floor(seed)
 #random.shuffle(seed)
 print("Random number using the same seed (wow): ", seed)
 
+print("Random integer: ", random.randint(1,10))
+print("Random float between 0 and 1: ", random.random())
+my_favs = ["taco", "burrito", "enchilada", "quesadilla"]
+print(random.choice(my_favs))
+random.shuffle(my_favs)
+print(my_favs)
 
-num = random.randint(1,10)
+
+print("\n--= Challenges =--\n")
+
+# ----------------------------------------------------------------
+# 1)
+diameter = 14
+radius = diameter / 2
+circle_area = math.pi * radius * radius
+print("Area of circle: ", circle_area)
+
+# 2)
+die_roll = random.randint(1, 6)
+print("The dice rolled", die_roll)
+
+
