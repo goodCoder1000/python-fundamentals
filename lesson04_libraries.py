@@ -18,18 +18,18 @@ print("\n--= Random Library =--\n")
 # to make a random number, computers need to make a bunch of code to make number seem random
 
 # attempt at making a random number without random.randint or random.shuffle
-for i in range(1,1000000):
-    seed = 676.76
-    seed = seed * time.time()
-    seed = seed / 6767
-    seed = math.sqrt(seed)
-    seed = seed * 10000000000
-    seed = seed % 10
-    seed = math.floor(seed)
-    #seed = str(seed)
-    #seed = list(seed)
-    #random.shuffle(seed)
-    print(seed)
+
+seed = 676.76
+seed = seed * time.time()
+seed = seed / 6767
+seed = math.sqrt(seed)
+seed = seed * 10000000000
+seed = seed % 10
+seed = math.floor(seed)
+#seed = str(seed)
+#seed = list(seed)
+#random.shuffle(seed)
+print("Random number using the same seed (wow): ", seed)
 
 
 num = random.randint(1,10)
