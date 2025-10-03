@@ -24,6 +24,9 @@ if (play_or_no == "Y"):
     type_out("Don't make this too difficult...               \n actually I doubt you'll be able to.", delay=0.05)
     time.sleep(2)
     type_out("I give you the opportunity to go first... ", delay=0.075)
+    load = random.randint(1, 12)
+    unload = 12 - load
+    
     
     
 
