@@ -24,3 +24,16 @@ print("Your favorite color is: ", color)
 num1 = int(input("1 number please: "))
 num2 = int(input("another number please: "))
 print("The sum is: ", num1 + num2)
+
+# Challenge 3
+diameter = int(input("Give me number: "))
+area_circle = math.pi * (diameter / 2) * (diameter / 2)
+print("Circle area: ", area_circle)
+
+# Challenge 4
+die = int(input("how many sides should the dice have: "))
+print("Rolling...")
+time.sleep(1)
+print("Rolling...")
+time.sleep(1)
+print("wow it finally finished!: ", random.randint(1, die))
