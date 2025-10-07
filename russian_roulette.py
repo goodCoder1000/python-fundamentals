@@ -9,7 +9,7 @@ def type_out(text, delay=0.3):
         print("\n\n\n\n\n\n", typed)
         time.sleep(delay)
 print("\n")
-type_out("Welcome to Buckshot Roulette...", delay=0.075)
+type_out("Welcome to Russian Roulette...", delay=0.075)
 time.sleep(2)
 type_out("This is a game of life and death...", delay=0.075)
 time.sleep(2)
@@ -45,11 +45,13 @@ if (play_or_no == "Y"):
         type_out("Ah, yes, time for my turn.", delay=0.05)
         time.sleep(1)
         type_out("*swiftly spins the revolver around shoots*", delay=0.03)
+        time.sleep(1)
         if (revolver[i] == 1):
             type_out("*BANG*", delay=0.01)
             time.sleep(2)
-            type_out("*your breathing is heavy as you walk out*", delay=0)
-            
+            type_out("*your breathing is heavy as you walk out*", delay=0.03)
+            time.sleep(2)
+            type_out("You survived... this time...", delay=0.05)
             
 
         
