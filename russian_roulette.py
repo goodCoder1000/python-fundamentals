@@ -6,14 +6,14 @@ def type_out(text, delay=0.3):
     typed = ""
     for char in text:
         typed += char
-        print("\n\n\n\n\n\n", typed)
+        print("\n\n\n\n\n\n\n", typed)
         time.sleep(delay)
 print("\n")
 type_out("Welcome to Russian Roulette...", delay=0.075)
 time.sleep(2)
 type_out("This is a game of life and death...", delay=0.075)
 time.sleep(2)
-play_or_no = input(print("Are you sure you want to play? (Y/N): "))
+play_or_no = input("Are you sure you want to play? (Y/N): ")
 if (play_or_no == "Y"):
     type_out("Good...", delay=0.3)
     time.sleep(1.5)
@@ -25,15 +25,37 @@ if (play_or_no == "Y"):
     time.sleep(2)
     type_out("I give you the opportunity to go first... ", delay=0.075)
     time.sleep(2)
-    load = random.randint(1, 6)
+    load = random.randint(0, 5)
     revolver = [0, 0, 0, 0, 0, 0]
-    for i in range(5):
+    for i in range(6):
         if (i == load):
-            revolver[i] == 1
+            revolver[i] = 1
         else:
-            revolver[i] == 0
+            revolver[i] = 0
 
+    print(revolver)
     num = 0
+
+    if (revolver[num] == 1):
+        type_out("*your hands tremble as you pick up the gun*", delay=0.02)
+        time.sleep(1.5)
+        type_out("*you shake the gun and hear the bullet in the first container... you know you'll die right now*", delay=0.012)
+        time.sleep(2.5)
+        type_out("*you spin around the gun as fast as you can and shoot your opponent*", delay=0.02)
+        time.sleep(2)
+        type_out("*YOU SPRINT OUT OF THE ROOM AND CALL FOR HELP WHILE HE STARTS TO RUN BEHIND YOU*", delay=0.02)
+        time.sleep(2)
+        type_out("*HE SHOOTS* *BANG*", delay=0.1)
+        time.sleep(1.5)
+        type_out("All you see is black... forever...", delay=0.067)
+
+        # end
+        time.sleep(3)
+        type_out("Fin", delay=1)
+        time.sleep(3)
+        type_out("THE GAME ENDED! RESTART USING PLAY BUTTON AT THE TOP RIGHT", delay=0.02)
+        time.sleep(10000)
+    
     while revolver[num] == 0:
         type_out("*your hands tremble as you pick up the gun*", delay=0.02)
         time.sleep(1.5)
@@ -41,17 +63,62 @@ if (play_or_no == "Y"):
         time.sleep(2)
         type_out("Blank...", delay=0.5)
         time.sleep(2)
-        i = i + 1
+        num = num + 1
         type_out("Ah, yes, time for my turn.", delay=0.05)
         time.sleep(1)
         type_out("*swiftly spins the revolver around shoots*", delay=0.03)
         time.sleep(1)
-        if (revolver[i] == 1):
+        if (revolver[num] == 1):
             type_out("*BANG*", delay=0.01)
+            time.sleep(2)
+            type_out("*you get up and see him lying on the floor*", delay=0.02)
             time.sleep(2)
             type_out("*your breathing is heavy as you walk out*", delay=0.03)
             time.sleep(2)
-            type_out("You survived... this time...", delay=0.05)
+            type_out("*you hear him say* 'You survived... this time...'", delay=0.05)
+            
+            # end
+            time.sleep(3)
+            type_out("Fin", delay=1)
+            time.sleep(3)
+            type_out("THE GAME ENDED! RESTART USING PLAY BUTTON AT THE TOP RIGHT", delay=0.02)
+            time.sleep(10000)
+
+        else:
+            type_out("*click*", delay=0.05)
+            time.sleep(1)
+            type_out("*laughs maniacally* Your turn again... >:)", delay=0.03)
+            time.sleep(2)
+            type_out("*hands the gun over*", delay=0.04)
+            time.sleep(1.5)
+            num = num + 1
+
+    type_out("*your hands tremble as you pick up the gun*", delay=0.02)
+    time.sleep(1.5)
+    type_out("*you slowly point it towards yourself and pull the trigger*", delay=0.015)
+    time.sleep(2)
+    type_out("*BANG*", delay=0.01)
+    time.sleep(2)
+    type_out("*you hear him walk over to you and watch as you DIE...*", delay=0.02)
+
+    # end
+    time.sleep(3)
+    type_out("Fin", delay=1)
+    time.sleep(3)
+    type_out("THE GAME ENDED! RESTART USING PLAY BUTTON AT THE TOP RIGHT", delay=0.02)
+    time.sleep(10000)
+
+elif (play_or_no == "N"):
+    type_out("*the door locks behind you*", delay=0.03)
+    time.sleep(1.5)
+    type_out("You had no choice to begin with...", delay=0.02)
+    time.sleep(1.5)
+    type_out("im too lazy to code this dialogue just restart plz", delay=0.02)
+
+elif (play_or_no != "Y" and play_or_no != "N"):
+    type_out("INVALID", delay=0.02)
+
+        
             
 
         
