@@ -9,6 +9,17 @@ def type_out(text, delay=0.3):
         print("\n\n\n\n\n\n\n", typed)
         time.sleep(delay)
 print("\n")
+
+load = random.randint(0, 5)
+revolver = [0, 0, 0, 0, 0, 0]
+for i in range(6): # post finish message: i forgot about random.shuffle oops
+    if (i == load):
+        revolver[i] = 1
+    else:
+        revolver[i] = 0
+print(revolver) # for testing purposes
+time.sleep(2)
+
 type_out("Welcome to Russian Roulette...", delay=0.075)
 time.sleep(2)
 type_out("This is a game of life and death...", delay=0.075)
@@ -25,17 +36,8 @@ if (play_or_no == "Y"):
     time.sleep(2)
     type_out("I give you the opportunity to go first... ", delay=0.075)
     time.sleep(2)
-    load = random.randint(0, 5)
-    revolver = [0, 0, 0, 0, 0, 0]
-    for i in range(6):
-        if (i == load):
-            revolver[i] = 1
-        else:
-            revolver[i] = 0
 
-    print(revolver)
     num = 0
-
     if (revolver[num] == 1):
         type_out("*your hands tremble as you pick up the gun*", delay=0.02)
         time.sleep(1.5)
@@ -66,9 +68,29 @@ if (play_or_no == "Y"):
         num = num + 1
         type_out("Ah, yes, time for my turn.", delay=0.05)
         time.sleep(1)
-        type_out("*swiftly spins the revolver around shoots*", delay=0.03)
+        type_out("*swiftly spins the revolver*", delay=0.03)
         time.sleep(1)
         if (revolver[num] == 1):
+            if (num == 5):
+                type_out("Wait... This is the last turn... I'm guaranteed death.", delay=0.03)
+                time.sleep(2)
+                type_out("OR AM I?!", delay=0.02)
+                time.sleep(1.5)
+                type_out("*turns the gun around and fires... AT YOU*", delay=0.02)
+                time.sleep(2)
+                type_out("*you hear him walk over to you and watch as you DIE...*", delay=0.015)
+                time.sleep(2)
+                type_out("THE HOUSE ALWAYS WINS >:)", delay=0.04)
+                
+                # end
+                time.sleep(3)
+                type_out("Fin", delay=1)
+                time.sleep(3)
+                type_out("THE GAME ENDED! RESTART USING PLAY BUTTON AT THE TOP RIGHT", delay=0.02)
+                time.sleep(10000)
+
+            type_out("*he shoots*", delay=0.05)
+            time.sleep(1.5)
             type_out("*BANG*", delay=0.01)
             time.sleep(2)
             type_out("*you get up and see him lying on the floor*", delay=0.02)
@@ -85,6 +107,8 @@ if (play_or_no == "Y"):
             time.sleep(10000)
 
         else:
+            type_out("*he shoots*", delay=0.05)
+            time.sleep(1.5)
             type_out("*click*", delay=0.05)
             time.sleep(1)
             type_out("*laughs maniacally* Your turn again... >:)", delay=0.03)
