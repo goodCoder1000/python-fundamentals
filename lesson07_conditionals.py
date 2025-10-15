@@ -95,3 +95,29 @@ else:
 
 if day is not "Monday":
     print("It's not Monday")
+
+# Challenges
+print("\n--- Challenges ---\n")
+
+# Challenge 1
+num = int(input("please give number hehe: "))
+if num % 2 == 0: print(f"{num} is even.\n")
+else: print(f"{num} is odd.\n")
+
+# one liner hehe haha
+# print(f"{(num := int(input('please give number hehe: ')))} is {'even' if num % 2 == 0 else 'odd'}.\n")
+
+
+# Challenge 2
+password = 1234
+if input("enter pass: ") == str(password): print("access granted")
+else: print("wrong imagine")
+
+# Challenge 3
+grade = random.randint(0, 101)
+if (grade < 60): print("you got F: ", grade)
+elif (grade < 70): print("you got D: ", grade)
+elif (grade < 80): print("you got C: ", grade)
+elif (grade < 90): print("you got B: ", grade)
+elif (grade <= 100): print("you got A: ", grade)
+elif (grade <= 101): print("good boy: ", grade)
