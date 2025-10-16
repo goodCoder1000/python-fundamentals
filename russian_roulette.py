@@ -80,8 +80,10 @@ if (play_or_no == "Y"):
                 time.sleep(2)
                 type_out("*you hear him walk over to you and watch as you DIE...*", delay=0.015)
                 time.sleep(2)
-                type_out("THE HOUSE ALWAYS WINS >:)", delay=0.04)
-                
+                type_out("THE HOUSE ALWAYS WINS MWHAHAAHAHAHA HAAHAHAHAAHHA HA HHAHAHAHAHAHAHA HA AHAHAHAHAAHAH HHA HAAH AHAHAHA AHAHAH HAHAHAHAH A AAHA AHAHAhHA HAHHAH Ah HhahaHAH ahaha HAHa haha ahHah AH HA HA aha hhaah  ahAHaHa hahAHAahaHa HahAHAh aHAHAHAHAHAHAa a EMH EHeEmeMEehemeMEhMeMeeeEMEEHehEhe EHEhEhEEMhme HMEmhEMehMemH mHE EhEMhEMHMEhE GOM gOm GOG MOGOMGG OGMGO GOGMO GOMGOGOGMOGOMGOMGGOGMOG MGOGMOGMOG Mgo GMogmgOGMoGMoGoHAEE HEAHaehAEHAEEAHAEHEHAHAHAHAahaHEHAHEhHAEHHhe eah EA HE H ahe haeAEH AEHAEHE EDIGGIDGIGIDIDGIDGDIDIGIGIDG DIGgdidiD Iggd idgI DGIGDI Di d dI dgDGI DG DGIDGIDGGDI H AVHEAH AEA haeAEH AE HE E AHEAHERHEEAH AE AE AE hAE emH AEME HeHM EHEAEHAEMae hmeaAMH AEM AEHAE MHA EHA EH MHWAHWahawmHWA MH WWAhmaw wAw HmW MAW HW MWA AW WA M AW MAW AWHM omg i love amogus a AAHH AhahA hA AH HAHAaHAa HaHHaa Ha A Ha Ha  AH AH AHA AHAHAH AHAA HAH AHAHAAHAHAHAH HAHAH AHAH AA H AHA HHAAH >:)", delay=0.02)
+                time.sleep(2)
+                type_out("*you realize that he missed the shot at you but you still died of cringe (:skull:)", delay=0.02)
+
                 # end
                 time.sleep(3)
                 type_out("Fin", delay=1)
