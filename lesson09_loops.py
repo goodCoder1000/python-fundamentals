@@ -82,4 +82,15 @@ while count > 0:
         break
 
     print(count)
+import random; import time
 
+print("\n--- Challenges ---\n")
+
+# Challenge 1
+fruits = ["apple", "banana", "orange", "granny smith apple", "blueberry", "dragonfruit", "mango", "durian", "strawberry", "blackberry", "raspberry", "elderberry", "jackfruit", "tomato", "payaya"]
+for i in range(int(input("How many fruits do you want (1-10): "))): print("You picked: ", random.choice(fruits)); time.sleep(0.5)
+
+# cool effect:
+for i in range(int(input("How many fruits do you want (1-10): "))):
+    for j in range(100): print("\n\n\n\n\n\n\n\n\nYou picked: " + random.choice(fruits)); time.sleep(0.05)
+    print("\n\n\n\n\n\n\n\n\nYou picked: " + random.choice(fruits)); time.sleep(2)
